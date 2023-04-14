@@ -59,6 +59,9 @@ def plot_rest_categories(db):
 
     plt.barh(ticks,freq)
     plt.yticks(ticks,keys)
+    plt.xlabel("Frequency of Restaurant ")
+    plt.ylabel("Restaurant Types")
+    plt.title("Types of Restaurants on SouthU Ave")
     plt.tight_layout()
     plt.savefig("Restaurant Type Freq")
     
