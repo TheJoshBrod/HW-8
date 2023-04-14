@@ -59,7 +59,11 @@ def plot_rest_categories(db):
 
     plt.barh(ticks,freq)
     plt.yticks(ticks,keys)
+    plt.tight_layout()
+    plt.savefig("Restaurant Type Freq")
+    
     plt.show()
+
     return data
 
 
